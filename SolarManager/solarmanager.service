@@ -1,0 +1,11 @@
+[Unit]
+Description=Solar Manager Service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/jonj/solarmanager.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

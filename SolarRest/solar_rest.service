@@ -1,0 +1,11 @@
+[Unit]
+Description=Solar Manager REST API Service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/jonj/PiProjects/SolarRest/solar_rest.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
